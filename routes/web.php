@@ -21,8 +21,24 @@ use App\Http\Controllers\UserController;
 // });
 
 
-Route::get('/admin',[AdminController::class,'adminindex']);
+Route::get('/adminhome',[AdminController::class,'adminindex']);
 Route::get('/',[UserController::class,'userindex']);
+
+
+
+
+
+Route::get('/addhomeinfo',[AdminController::class,'addhomeinfo']);
+Route::get('/viewhomeinfo',[AdminController::class,'viewhomeinfo']);
+Route::get('/edithomeinfo',[AdminController::class,'edithomeinfo']);
+
+
+Route::get('/addaboutinfo',[AdminController::class,'addaboutinfo']);
+Route::get('/viewaboutinfo',[AdminController::class,'viewaboutinfo']);
+Route::get('/editaboutinfo',[AdminController::class,'editaboutinfo']);
+
+
+
 
 
 
