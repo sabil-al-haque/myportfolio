@@ -41,30 +41,25 @@
                                   <thead class="thead-light">
                                     <tr>
                                       <th>Name</th>
-                                      <th>Position</th>
-                                      <th>Office</th>
-                                      <th>Age</th>
-                                      <th>Start date</th>
+                                      <th>Image</th>
+
                                       <th>Action</th>
                                     </tr>
                                   </thead>
                                   <tfoot>
                                     <tr>
                                       <th>Name</th>
-                                      <th>Position</th>
-                                      <th>Office</th>
-                                      <th>Age</th>
-                                      <th>Start date</th>
+                                      <th>Image</th>
+
                                       <th>Action</th>
                                     </tr>
                                   </tfoot>
                                   <tbody>
+                                    @foreach ($data as $item)
                                     <tr>
-                                      <td>Tiger Nixon</td>
-                                      <td>System Architect</td>
-                                      <td>Edinburgh</td>
-                                      <td>61</td>
-                                      <td>2011/04/25</td>
+                                      <td>{{ $item->name }}</td>
+                                      <td>{{ $item->image }}</td>
+
                                       <td>
                                         <a href="{{ url('editaboutinfo') }}" class="btn btn-success">
                                             <i class="fas fa-edit"></i>
@@ -74,6 +69,8 @@
                                         </a>
                                     </td>
                                     </tr>
+
+                                    @endforeach
 
                                   </tbody>
                                 </table>

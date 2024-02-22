@@ -29,13 +29,16 @@ Route::get('/',[UserController::class,'userindex']);
 
 
 Route::get('/addhomeinfo',[AdminController::class,'addhomeinfo']);
-Route::get('/viewhomeinfo',[AdminController::class,'viewhomeinfo']);
+Route::get('/viewhomeinfo',[AdminController::class,'showhomeinfo']);
 Route::get('/edithomeinfo',[AdminController::class,'edithomeinfo']);
+Route::POST('/addhomeinfostore',[AdminController::class,'addhomeinfostore']);
+
 
 
 Route::get('/addaboutinfo',[AdminController::class,'addaboutinfo']);
-Route::get('/viewaboutinfo',[AdminController::class,'viewaboutinfo']);
+Route::get('/viewaboutinfo',[AdminController::class,'showaboutinfo']);
 Route::get('/editaboutinfo',[AdminController::class,'editaboutinfo']);
+Route::POST('/addaboutinfostore',[AdminController::class,'addaboutinfostore']);
 
 
 
