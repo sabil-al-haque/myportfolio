@@ -91,7 +91,7 @@
                                         <a href="{{ url('deleteaboutinfo') }}" class="btn btn-danger mx-3" >
                                             <i class="fas fa-trash"></i>
                                         </a>
-                                    </td>
+                                      </td>
                                     </tr>
 
                                     @endforeach

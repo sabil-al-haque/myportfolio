@@ -6,38 +6,19 @@
         </div>
         <div class="row">
             <div class="col-lg-4 mb-5">
+                @foreach ($blogdata as $item)
                 <div class="position-relative mb-4">
-                    <img class="img-fluid rounded w-100" src="user/img/blog-1.jpg" alt="">
+                    <img class="img-fluid rounded w-100" src="blogimage/{{ $item->image }}" alt="blogimage">
                     <div class="blog-date">
-                        <h4 class="font-weight-bold mb-n1">01</h4>
-                        <small class="text-white text-uppercase">Jan</small>
+                        <h4 class="font-weight-bold mb-n1">{{ $item->day }}</h4>
+                        <small class="text-white text-uppercase">{{ $item->month }}</small>
                     </div>
                 </div>
-                <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                <h5 class="font-weight-medium mb-4">{{ $item->content }}</h5>
                 <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                @endforeach
             </div>
-            <div class="col-lg-4 mb-5">
-                <div class="position-relative mb-4">
-                    <img class="img-fluid rounded w-100" src="user/img/blog-2.jpg" alt="">
-                    <div class="blog-date">
-                        <h4 class="font-weight-bold mb-n1">01</h4>
-                        <small class="text-white text-uppercase">Jan</small>
-                    </div>
-                </div>
-                <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-            </div>
-            <div class="col-lg-4 mb-5">
-                <div class="position-relative mb-4">
-                    <img class="img-fluid rounded w-100" src="user/img/blog-3.jpg" alt="">
-                    <div class="blog-date">
-                        <h4 class="font-weight-bold mb-n1">01</h4>
-                        <small class="text-white text-uppercase">Jan</small>
-                    </div>
-                </div>
-                <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-            </div>
+
         </div>
     </div>
 </div>

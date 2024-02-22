@@ -114,7 +114,7 @@
             <!-- Pie Chart -->
 
             <!-- Invoice Example -->
-            <div class="col-xl-8 col-lg-7 mb-4">
+            <div class="col-xl-12 col-lg-7 mb-4">
               <div class="card">
 
                 <div class="table-responsive">
@@ -129,41 +129,27 @@
                       </tr>
                     </thead>
                     <tbody>
+                        @foreach ($contactdata as $item)
+
                       <tr>
-                        <td><a href="#">RA0449</a></td>
-                        <td>Udin Wayang</td>
-                        <td>Nasi Padang</td>
-                        <td><span class="badge badge-success">Delivered</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                        <td>{{ $item->name }}</td>
+                        <td>{{ $item->email }}</td>
+                        <td>{{ $item->subject }}</td>
+                        <td>{{ $item->message }}</td>
+
+                        <td>
+                            <a href="{{ url('editaboutinfo') }}" class="btn btn-success">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="{{ url('deleteaboutinfo') }}" class="btn btn-danger " >
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+
                       </tr>
-                      <tr>
-                        <td><a href="#">RA5324</a></td>
-                        <td>Jaenab Bajigur</td>
-                        <td>Gundam 90' Edition</td>
-                        <td><span class="badge badge-warning">Shipping</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA8568</a></td>
-                        <td>Rivat Mahesa</td>
-                        <td>Oblong T-Shirt</td>
-                        <td><span class="badge badge-danger">Pending</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA1453</a></td>
-                        <td>Indri Junanda</td>
-                        <td>Hat Rounded</td>
-                        <td><span class="badge badge-info">Processing</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA1998</a></td>
-                        <td>Udin Cilok</td>
-                        <td>Baby Powder</td>
-                        <td><span class="badge badge-success">Delivered</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
+
+                      @endforeach
+
                     </tbody>
                   </table>
                 </div>

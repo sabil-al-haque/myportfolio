@@ -7,27 +7,16 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="owl-carousel testimonial-carousel">
+                    @foreach ($clientdata as $item)
                     <div class="text-center">
                         <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                        <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                        <img class="img-fluid rounded-circle mx-auto mb-3" src="user/img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                        <h5 class="font-weight-bold m-0">Client Name</h5>
-                        <span>Profession</span>
+                        <h4 class="font-weight-light mb-4">{{ $item->say }}</h4>
+                        <img class="img-fluid rounded-circle mx-auto mb-3" src="clientimage/{{ $item->image }}" style="width: 80px; height: 80px;">
+                        <h5 class="font-weight-bold m-0">C{{ $item->name }}</h5>
+                        <span>{{ $item->profession }}</span>
                     </div>
-                    <div class="text-center">
-                        <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                        <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                        <img class="img-fluid rounded-circle mx-auto mb-3" src="user/img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                        <h5 class="font-weight-bold m-0">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                    <div class="text-center">
-                        <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                        <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                        <img class="img-fluid rounded-circle mx-auto mb-3" src="user/img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                        <h5 class="font-weight-bold m-0">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>

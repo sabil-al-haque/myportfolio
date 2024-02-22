@@ -19,5 +19,6 @@ class About extends Model
         'email',
         'address',
         'freelance',
+        'image',
     ];
 }

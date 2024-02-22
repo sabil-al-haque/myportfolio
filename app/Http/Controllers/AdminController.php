@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\About;
 use App\Models\Blog;
 use App\Models\Client;
+use App\Models\Contact;
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\Home;
@@ -17,8 +18,10 @@ class AdminController extends Controller
 {
     public function adminindex()
     {
+        $contactdata= Contact::all();
 
-        return view('admin.index');
+
+        return view('admin.index',compact('contactdata'));
 
     }
 
@@ -101,6 +104,17 @@ class AdminController extends Controller
         $data->email = $request->email;
         $data->address = $request->address;
         $data->freelance = $request->freelance;
+
+        if ($request->hasFile('file')) {
+            $image = $request->file('file');
+            if ($image->isValid()) {
+                $imageName = time() . '.' . $image->getClientOriginalExtension();
+                $image->move('aboutimage', $imageName);
+                $data->image = $imageName;
+            } else {
+                return redirect()->back()->with('error', 'Invalid file.');
+            }
+        }
 
         $data->save();
 
@@ -343,7 +357,7 @@ public function addclientinfostore(Request $request)
         $image = $request->file('file');
         if ($image->isValid()) {
             $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move('clienttimage', $imageName);
+            $image->move('clientimage', $imageName);
             $data->image = $imageName;
         } else {
             return redirect()->back()->with('error', 'Invalid file.');
@@ -392,7 +406,7 @@ public function addbloginfostore(Request $request)
         $image = $request->file('file');
         if ($image->isValid()) {
             $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move('blogtimage', $imageName);
+            $image->move('blogimage', $imageName);
             $data->image = $imageName;
         } else {
             return redirect()->back()->with('error', 'Invalid file.');

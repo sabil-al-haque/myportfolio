@@ -14,67 +14,22 @@
                 </ul>
             </div>
         </div>
+
         <div class="row portfolio-container">
             <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                @foreach ($projectdata as $item)
                 <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="user/img/portfolio-1.jpg" alt="">
+                    <img class="img-fluid rounded w-100" src="projectimage/{{ $item->project_image }}" alt="">
                     <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                         <a href="user/img/portfolio-1.jpg" data-lightbox="portfolio">
                             <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                         </a>
                     </div>
+                    <p>Project Name: {{ $item->project_name }}</p>
                 </div>
+                @endforeach
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="user/img/portfolio-2.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="user/img/portfolio-2.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="user/img/portfolio-3.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="user/img/portfolio-3.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="user/img/portfolio-4.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="user/img/portfolio-4.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="user/img/portfolio-5.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="user/img/portfolio-5.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="user/img/portfolio-6.jpg" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="user/img/portfolio-6.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>

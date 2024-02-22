@@ -94,6 +94,14 @@
                       placeholder="Enter freelance">
                   </div>
 
+                  <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" id="image" name="file" accept="image/*">
+
+
+                    </div>
+                  </div>
+
 
 
 

@@ -1,7 +1,7 @@
 <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
     <div class="container">
         <div class="row align-items-center">
-            @foreach ($data as $item)
+            @foreach ($homedata as $item)
             <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
                 <img class="img-fluid w-100 rounded-circle shadow-sm" src="homeimage/{{ $item->image }}" alt="image">
             </div>
@@ -15,6 +15,7 @@
 
                 </div>
             </div>
+
             @endforeach
         </div>
     </div>
