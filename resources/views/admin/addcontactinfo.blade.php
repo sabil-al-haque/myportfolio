@@ -38,29 +38,64 @@
 
           <div class="row mb-3">
             <div class="card-body">
-                <form action="{{ url('addexperienceinfostore') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('addaboutinfostore') }}" method="post" enctype="multipart/form-data">
                     @csrf
                   <div class="form-group">
                     <label for="exampleInputEmail1">Enter Your Title</label>
                     <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter title">
                   </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter your content</label>
+                    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your Name</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter Name">
+                  </div>
+                  <div class="form-group" id="simple-date1">
+                    <label for="simpleDataInput">Birthday</label>
+                      <div class="input-group date">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                        </div>
+                        <input type="text" name="birthday" class="form-control" value="01/06/2020" id="simpleDataInput">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your degree</label>
+                    <input type="text" name="degree" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter degree">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your experience</label>
+                    <input type="text" name="experience" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter experience">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your phone</label>
+                    <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your email</label>
+                    <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your address</label>
+                    <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter address">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your freelance</label>
+                    <input type="text" name="freelance" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter freelance">
+                  </div>
 
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your company Name</label>
-                    <input type="text" name="company" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your period</label>
-                    <input type="text" name="period" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter details</label>
-                    <input type="text" name="details" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
+
+
 
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

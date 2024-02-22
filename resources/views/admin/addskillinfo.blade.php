@@ -38,29 +38,20 @@
 
           <div class="row mb-3">
             <div class="card-body">
-                <form action="{{ url('addexperienceinfostore') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('addskillinfostore') }}" method="post" enctype="multipart/form-data">
                     @csrf
                   <div class="form-group">
                     <label for="exampleInputEmail1">Enter Your Title</label>
                     <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter title">
                   </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Your percentage</label>
+                    <input type="text" name="percentage" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter title">
+                  </div>
 
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your company Name</label>
-                    <input type="text" name="company" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your period</label>
-                    <input type="text" name="period" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter details</label>
-                    <input type="text" name="details" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
+
 
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

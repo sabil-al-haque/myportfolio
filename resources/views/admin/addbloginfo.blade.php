@@ -38,29 +38,28 @@
 
           <div class="row mb-3">
             <div class="card-body">
-                <form action="{{ url('addexperienceinfostore') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('addbloginfostore') }}" method="post" enctype="multipart/form-data">
                     @csrf
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your Title</label>
-                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="exampleInputEmail1">Enter the Day</label>
+                    <input type="text" name="day" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter title">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter your month</label>
+                    <textarea class="form-control" name="month" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter blog content</label>
+                    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
 
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your company Name</label>
-                    <input type="text" name="company" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
+                    <div class="custom-file">
+                        <input type="file" id="image" name="file" accept="image/*">
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your period</label>
-                    <input type="text" name="period" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Enter details</label>
-                    <input type="text" name="details" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Name">
-                  </div>
+
 
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

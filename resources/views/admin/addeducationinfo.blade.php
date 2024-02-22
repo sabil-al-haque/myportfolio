@@ -38,26 +38,26 @@
 
           <div class="row mb-3">
             <div class="card-body">
-                <form action="{{ url('addexperienceinfostore') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('addeducationinfostore') }}" method="post" enctype="multipart/form-data">
                     @csrf
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your Title</label>
-                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="exampleInputEmail1">Enter Your exam_name</label>
+                    <input type="text" name="exam_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter title">
                   </div>
 
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your company Name</label>
-                    <input type="text" name="company" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="exampleInputEmail1">Enter Your exam_year</label>
+                    <input type="text" name="exam_year" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter Name">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Your period</label>
-                    <input type="text" name="period" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="exampleInputEmail1">Enter Your institute</label>
+                    <input type="text" name="institute" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter Name">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Enter details</label>
+                    <label for="exampleInputEmail1">Enter Your details</label>
                     <input type="text" name="details" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                       placeholder="Enter Name">
                   </div>

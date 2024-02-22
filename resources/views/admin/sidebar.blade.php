@@ -53,8 +53,8 @@
       <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Experience info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Experience info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Experience info</a>
+          <a class="collapse-item" href="{{ url('addexperienceinfo') }}">Add Experience info</a>
+          <a class="collapse-item" href="{{ url('showexperienceinfo') }}">View Experience info</a>
         </div>
       </div>
     </li>
@@ -69,8 +69,8 @@
       <div id="collapseEducation" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Education info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Education info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Education info</a>
+          <a class="collapse-item" href="{{ url('addeducationinfo') }}">Add Education info</a>
+          <a class="collapse-item" href="{{ url('showeducationinfo') }}">View Education info</a>
         </div>
       </div>
     </li>
@@ -85,8 +85,8 @@
       <div id="collapseSkills" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Experience info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Skills info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Skills info</a>
+          <a class="collapse-item" href="{{ url('addskillinfo') }}">Add Skills info</a>
+          <a class="collapse-item" href="{{ url('showskillinfo') }}">View Skills info</a>
         </div>
       </div>
     </li>
@@ -101,8 +101,8 @@
       <div id="collapseService" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Service info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Service info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Service info</a>
+          <a class="collapse-item" href="{{ url('addserviceinfo') }}">Add Service info</a>
+          <a class="collapse-item" href="{{ url('showserviceinfo') }}">View Service info</a>
         </div>
       </div>
     </li>
@@ -117,8 +117,8 @@
       <div id="collapseProject" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Project info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Project info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Project info</a>
+          <a class="collapse-item" href="{{ url('addprojectinfo') }}">Add Project info</a>
+          <a class="collapse-item" href="{{ url('showprojectinfo') }}">View Project info</a>
         </div>
       </div>
     </li>
@@ -133,8 +133,8 @@
       <div id="collapseClint" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Clint info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Clint info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Clint info</a>
+          <a class="collapse-item" href="{{ url('addclientinfo') }}">Add Clint info</a>
+          <a class="collapse-item" href="{{ url('showclientinfo') }}">View Clint info</a>
         </div>
       </div>
     </li>
@@ -148,8 +148,8 @@
       <div id="collapseBlog" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Experience info</h6>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">Add Blog info</a>
-          <a class="collapse-item" href="{{ url('addhomeinfo') }}">View Blog info</a>
+          <a class="collapse-item" href="{{ url('addbloginfo') }}">Add Blog info</a>
+          <a class="collapse-item" href="{{ url('showbloginfo') }}">View Blog info</a>
         </div>
       </div>
     </li>
@@ -162,9 +162,9 @@
       </a>
       <div id="collapseBlog" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">Experience info</h6>
+          <h6 class="collapse-header">Contact info</h6>
 
-          <a class="collapse-item" href="datatables.html">View Blog info</a>
+          <a class="collapse-item" href="{{ url('showcontactinfo') }}">View Blog info</a>
         </div>
       </div>
     </li>
