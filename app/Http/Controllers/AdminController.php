@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
+
 
 use App\Models\About;
 use App\Models\Blog;
@@ -21,11 +23,15 @@ class AdminController extends Controller
         $contactdata= Contact::all();
 
 
-        return view('admin.index',compact('contactdata'));
+        if(Auth::id()){         //jodi login keu kore thake
+
+            return view('admin.index',compact('contactdata'));
+        }
+        else{
+            return redirect('login');
+        }
 
     }
-
-
 
 
 

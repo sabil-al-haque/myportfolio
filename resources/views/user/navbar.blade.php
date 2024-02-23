@@ -16,6 +16,11 @@
             <a href="#testimonial" class="nav-item nav-link">Review</a>
             <a href="#blog" class="nav-item nav-link">Blog</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
+            <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
+
+
+
+
         </div>
         <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
     </div>

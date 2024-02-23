@@ -16,9 +16,9 @@ use App\Http\Controllers\UserController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/jetdashboard', function () {
+    return view('welcome');
+});
 
 
 Route::get('/adminhome',[AdminController::class,'adminindex']);
