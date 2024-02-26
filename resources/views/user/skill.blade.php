@@ -10,7 +10,7 @@
                 <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
                         <h6 class="font-weight-bold">{{ $item->title }}</h6>
-                        <h6 class="font-weight-bold">{{ $item->percentage }}</h6>
+                        <h6 class="font-weight-bold">{{ $item->percentage }}%</h6>
                     </div>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="{{ $item->percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
@@ -18,19 +18,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6">
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-bold">Javascript</h6>
-                        <h6 class="font-weight-bold">90%</h6>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
 
-
-            </div>
             @endforeach
         </div>
     </div>
