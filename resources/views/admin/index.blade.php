@@ -117,6 +117,8 @@
 
             <!-- Invoice Example -->
             <div class="col-xl-12 col-lg-7 mb-4">
+
+                {{-- <h2>{{ Auth::user()->name}}</h2> --}}
               <div class="card">
 
                 <div class="table-responsive">
